@@ -1,0 +1,3 @@
+aws s3 cp s3://testingcxo/ ./store --recursive
+node write.js
+rm -rf store
