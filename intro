@@ -1,3 +1,4 @@
-aws s3 cp s3://testingcxo/ ./store --recursive
-node write.js
+git clone https://github.com/cxogaryguan/store.git
+aws s3 cp s3://testingcxo/ ./data/store --recursive
+docker-compose up
 rm -rf store

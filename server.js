@@ -6,7 +6,7 @@ const cors = require('cors');
 var grid = require("gridfs-stream");
 
 // mongoose.connect('mongodb://admin:abcdef1@ds151997.mlab.com:51997/storetest', { useNewUrlParser: true });
-mongoose.connect('mongodb://localhost:27017/filesDB', { useNewUrlParser: true }).then(() => {
+mongoose.connect('mongodb://mongo:27017/filesDB', { useNewUrlParser: true }).then(() => {
     console.log('Connection to DB successful');
   }).catch(err => {
     throw new Error(err)
